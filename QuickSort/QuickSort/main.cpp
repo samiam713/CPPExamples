@@ -11,67 +11,50 @@
 
 using namespace std;
 
-constexpr int SIZE = 20;
+typedef vector<int>::iterator iter;
 
-void quickSort(vector<int> & vec) {
-    if (vec.size() <= 2) {
-        if (vec.size()==2) {
-            if (vec[1] < vec[0]) {
-                swap(vec[1], vec[0]);
-            }
-            return;
-        } else {
-            return;
-        }
-    } else {
-        vector<int> low;
-        vector<int> high;
-        auto iterator = vec.begin();
-        int pivot = *iterator;
-        iterator++;
-        while (iterator != vec.end()) {
-            if (*iterator < pivot) {
-                low.push_back(*iterator);
+void qs(iter low, iter high) {
+    const long length = high - low;
+    
+    // if distance <= 2, manually sort and end recursion
+    if (length <= 2) {if (length == 2 && *high < *low) swap(*high, *low); return;}
+    else {
+        int const pivotValue = *high;
+        iter rTraverser = high-1;
+        iter lTraverser = low;
+        while (lTraverser != rTraverser) {
+            if (*lTraverser <= pivotValue) {
+                ++lTraverser;
             } else {
-                high.push_back(*iterator);
+                swap(*lTraverser, *(rTraverser--));
             }
-            iterator++;
         }
-        // now merge the lists
-        quickSort(low);
-        quickSort(high);
-        size_t i = 0;
-        for (const auto& item: low) {
-            vec[i] = item;
-            i++;
-        }
-        vec[i] = pivot;
-        i++;
-        for (const auto& item : high) {
-            vec[i] = item;
-            i++;
-        }
+        
+        // put pivot at x so that high values are in [x+1,high]
+        // sort the subsections
+        if (*lTraverser <= pivotValue) lTraverser++;
+        swap(*lTraverser, *high);
+        qs(low, lTraverser-1);
+        qs(lTraverser+1,high);
     }
 }
 
+void qs(vector<int>& v) {qs(v.begin(), v.end()-1);}
+
+constexpr int SIZE = 20;
 int main(int argc, const char * argv[]) {
     
     random_device rd;
-    
     vector<int> sortMe(SIZE);
-    
     uniform_int_distribution<int> dist(1,100);
     
-    for (auto& integer : sortMe) {
-        integer = dist(rd);
-    }
+    for (int& integer : sortMe) integer = dist(rd);
     
-    quickSort(sortMe);
+    for (const auto& item : sortMe) cout << item << ' '; cout << endl;
     
-    for (const auto& item : sortMe) {
-        cout << item << ' ';
-    }
-    cout << endl;
+    qs(sortMe);
+    
+    for (const auto& item : sortMe) cout << item << ' '; cout << endl;
     
     return 0;
 }
