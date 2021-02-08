@@ -18,16 +18,15 @@ class Heap {
 public:
     Heap(std::vector<T> const & heap) :
     heap(heap) , op() {
-        const size_t x = heap.size()/2;
-        for (size_t i = x; i <= x; i--) {  // the i <= x is weird
+        size_t const x = heap.size()/2;
+        for (size_t i = x; i <= x; i--) {
             trickleDown(i);
         }
     };
-    
     void insert(T item);
     const T& front();
     void popFront();
-    friend std::ostream& operator<<(std::ostream& os, const Heap<T,Op>& heap) {
+    friend std::ostream& operator<<(std::ostream& os, Heap<T,Op> const & heap) {
         if (heap.empty()) {
             std::cout << "EMPTY_HEAP";
             return os;
@@ -39,9 +38,7 @@ public:
         }
         return os;
     }
-    bool empty() const {
-        return heap.empty();
-    }
+    bool empty() const {return heap.empty();}
     
 private:
     void trickleUp(size_t child);
@@ -68,11 +65,11 @@ void Heap<T,Op>::popFront() {
             heap.clear();
             return;
         } else {
-            throw std::logic_error("OH MY GOD");
+            throw std::logic_error("Popping from empty heap");
         }
     }
     
-    std::swap(heap.front(),heap.back());
+    heap.front() = heap.back();
     heap.pop_back();
     trickleDown(0);
     
@@ -83,6 +80,7 @@ void Heap<T,Op>::trickleUp(size_t child) {
     if (child == 0) return;
     
     size_t const parent = (child - 1)/2;
+    
     if (op(heap[child],heap[parent])) {
         std::swap(heap[child], heap[parent]);
         trickleUp(parent);
