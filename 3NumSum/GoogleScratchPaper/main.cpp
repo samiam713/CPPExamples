@@ -16,6 +16,12 @@ vector<vector<int>> threeSum(vector<int> const & nums);
 
 int main(int argc, const char * argv[]) {
     
+    for(char c = 'A'; c <= 'Z'; c++) cout << '\'' << c << '\'' << ',';
+    cout << endl;
+    
+    for(char c = 'a'; c <= 'z'; c++) cout << '\'' << c << '\'' << ',';
+    cout << endl;
+    
     vector<int> const integers {0,1,-1,4,2,1,-5,-4,-20,10,10,0,13,-2,-6,-9,3,6,0};
     
     const vector<vector<int>> ans = threeSum(integers);
