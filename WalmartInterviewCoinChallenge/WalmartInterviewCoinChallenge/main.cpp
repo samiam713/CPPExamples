@@ -9,7 +9,7 @@
 #include <vector>
 #include <unordered_map>
 #include <utility>
- 
+
 using namespace std;
 
 struct CachePairHash;
@@ -17,7 +17,7 @@ struct CachePairHash;
 // a cache so we don't recalculate solutions to subproblems we've already calculated
 typedef pair<size_t,int> CachePair;
 typedef unordered_map<CachePair,int,CachePairHash> Cache;
- 
+
 // function to hash the pair that is the key in the cache
 // C++ doesn't do this automatically so adapted this hash function from
 // https://www.techiedelight.com/use-std-pair-key-std-unordered_map-cpp/
@@ -67,7 +67,7 @@ int leastNumCoinsDriver(vector<int> const & coinVals, int target) {
 // precondition is that target > 0 (I make sure to enforce this precondition whenever calling the function)
 int leastNumCoins(vector<int> const & coinVals, size_t lowerBound, int target, Cache & cache) {
     
-    // takes 0 coins to get 0 coins
+    // takes 0 coins to get 0 value
     if (target == 0) return 0;
     
     // base case:
@@ -104,24 +104,20 @@ int leastNumCoins(vector<int> const & coinVals, size_t lowerBound, int target, C
         // find solution to subproblem using 'usingCurrentCoin' of the current coin
         int const subProblemResult = leastNumCoins(coinVals, lowerBound + 1, currentTarget, cache);
         
-        // if we couldn't find a solution in the subproblem, continue searching
-        if (subProblemResult == -1) {
-            usingCurrentCoin++;
-            continue;
+        // if we find a solution in the subproblem, check it out,
+        // otherwise directly skip to checking using one more of the current coin
+        if (subProblemResult != -1) {
+            
+            // if made it past above statement, we've found a solution to the problem 'potentialMin', which is:
+            // (the lowest number of coins usable in the subproblem targeting target - usingCurrentCoin*coinVals[lowerBound]) + (the number of the current coins we're using)
+            int const potentialMin = subProblemResult + usingCurrentCoin;
+            
+            // now we check if this 'potentialMin' has used less coins than our 'currentMin'
+            // if we haven't found a 'currentMin' or 'potentialMin' has used less coins than our 'currentMin',
+            // 'potentialMin' becomes the 'currentMin' - the best solution we've found so far
+            if (currentMin == -1 || potentialMin < currentMin) currentMin = potentialMin;
         }
         
-        // if made it past above statement, we've found a solution to the problem 'potentialMin', which is:
-        // (the lowest number of coins usable in the subproblem targeting target - usingCurrentCoin*coinVals[lowerBound]) + (the number of the current coins we're using)
-        int const potentialMin = subProblemResult + usingCurrentCoin;
-        
-        // now we check if this 'potentialMin' has used less coins than our 'currentMin'
-        // if we haven't found a 'currentMin' or 'potentialMin' has used less coins than our 'currentMin',
-        // 'potentialMin' becomes the 'currentMin' - the best solution we've found so far
-        if (currentMin == -1 || potentialMin < currentMin) {
-            currentMin = potentialMin;
-        } else {
-            if (currentMin > potentialMin) currentMin = potentialMin;
-        }
         usingCurrentCoin++;
     }
     

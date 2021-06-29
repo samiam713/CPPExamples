@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D331079925AF61A700F6BFAE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D331079825AF61A700F6BFAE /* main.cpp */; };
-		D3EF24BC266969FF001C6687 /* Solution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3EF24BA266969FF001C6687 /* Solution.cpp */; };
+		D3B4264B2630DE03008B8596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3B4264A2630DE03008B8596 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D331079325AF61A700F6BFAE /* CopyFiles */ = {
+		D3B426452630DE03008B8596 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D331079525AF61A700F6BFAE /* GoogleScratchPaper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GoogleScratchPaper; sourceTree = BUILT_PRODUCTS_DIR; };
-		D331079825AF61A700F6BFAE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		D3EF24BA266969FF001C6687 /* Solution.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution.cpp; sourceTree = "<group>"; };
-		D3EF24BB266969FF001C6687 /* Solution.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution.hpp; sourceTree = "<group>"; };
+		D3B426472630DE03008B8596 /* C++Playground_0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++Playground_0"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B4264A2630DE03008B8596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D331079225AF61A700F6BFAE /* Frameworks */ = {
+		D3B426442630DE03008B8596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,66 +38,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D331078C25AF61A700F6BFAE = {
+		D3B4263E2630DE03008B8596 = {
 			isa = PBXGroup;
 			children = (
-				D331079725AF61A700F6BFAE /* GoogleScratchPaper */,
-				D331079625AF61A700F6BFAE /* Products */,
+				D3B426492630DE03008B8596 /* C++Playground_0 */,
+				D3B426482630DE03008B8596 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D331079625AF61A700F6BFAE /* Products */ = {
+		D3B426482630DE03008B8596 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D331079525AF61A700F6BFAE /* GoogleScratchPaper */,
+				D3B426472630DE03008B8596 /* C++Playground_0 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D331079725AF61A700F6BFAE /* GoogleScratchPaper */ = {
+		D3B426492630DE03008B8596 /* C++Playground_0 */ = {
 			isa = PBXGroup;
 			children = (
-				D331079825AF61A700F6BFAE /* main.cpp */,
-				D3EF24BA266969FF001C6687 /* Solution.cpp */,
-				D3EF24BB266969FF001C6687 /* Solution.hpp */,
+				D3B4264A2630DE03008B8596 /* main.cpp */,
 			);
-			path = GoogleScratchPaper;
+			path = "C++Playground_0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D331079425AF61A700F6BFAE /* GoogleScratchPaper */ = {
+		D3B426462630DE03008B8596 /* C++Playground_0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D331079C25AF61A700F6BFAE /* Build configuration list for PBXNativeTarget "GoogleScratchPaper" */;
+			buildConfigurationList = D3B4264E2630DE03008B8596 /* Build configuration list for PBXNativeTarget "C++Playground_0" */;
 			buildPhases = (
-				D331079125AF61A700F6BFAE /* Sources */,
-				D331079225AF61A700F6BFAE /* Frameworks */,
-				D331079325AF61A700F6BFAE /* CopyFiles */,
+				D3B426432630DE03008B8596 /* Sources */,
+				D3B426442630DE03008B8596 /* Frameworks */,
+				D3B426452630DE03008B8596 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GoogleScratchPaper;
-			productName = GoogleScratchPaper;
-			productReference = D331079525AF61A700F6BFAE /* GoogleScratchPaper */;
+			name = "C++Playground_0";
+			productName = "C++Playground_0";
+			productReference = D3B426472630DE03008B8596 /* C++Playground_0 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D331078D25AF61A700F6BFAE /* Project object */ = {
+		D3B4263F2630DE03008B8596 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					D331079425AF61A700F6BFAE = {
-						CreatedOnToolsVersion = 12.3;
+					D3B426462630DE03008B8596 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = D331079025AF61A700F6BFAE /* Build configuration list for PBXProject "GoogleScratchPaper" */;
+			buildConfigurationList = D3B426422630DE03008B8596 /* Build configuration list for PBXProject "C++Playground_0" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,30 +103,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D331078C25AF61A700F6BFAE;
-			productRefGroup = D331079625AF61A700F6BFAE /* Products */;
+			mainGroup = D3B4263E2630DE03008B8596;
+			productRefGroup = D3B426482630DE03008B8596 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D331079425AF61A700F6BFAE /* GoogleScratchPaper */,
+				D3B426462630DE03008B8596 /* C++Playground_0 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D331079125AF61A700F6BFAE /* Sources */ = {
+		D3B426432630DE03008B8596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EF24BC266969FF001C6687 /* Solution.cpp in Sources */,
-				D331079925AF61A700F6BFAE /* main.cpp in Sources */,
+				D3B4264B2630DE03008B8596 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D331079A25AF61A700F6BFAE /* Debug */ = {
+		D3B4264C2630DE03008B8596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		D331079B25AF61A700F6BFAE /* Release */ = {
+		D3B4264D2630DE03008B8596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +236,7 @@
 			};
 			name = Release;
 		};
-		D331079D25AF61A700F6BFAE /* Debug */ = {
+		D3B4264F2630DE03008B8596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -252,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		D331079E25AF61A700F6BFAE /* Release */ = {
+		D3B426502630DE03008B8596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -265,25 +259,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D331079025AF61A700F6BFAE /* Build configuration list for PBXProject "GoogleScratchPaper" */ = {
+		D3B426422630DE03008B8596 /* Build configuration list for PBXProject "C++Playground_0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D331079A25AF61A700F6BFAE /* Debug */,
-				D331079B25AF61A700F6BFAE /* Release */,
+				D3B4264C2630DE03008B8596 /* Debug */,
+				D3B4264D2630DE03008B8596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D331079C25AF61A700F6BFAE /* Build configuration list for PBXNativeTarget "GoogleScratchPaper" */ = {
+		D3B4264E2630DE03008B8596 /* Build configuration list for PBXNativeTarget "C++Playground_0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D331079D25AF61A700F6BFAE /* Debug */,
-				D331079E25AF61A700F6BFAE /* Release */,
+				D3B4264F2630DE03008B8596 /* Debug */,
+				D3B426502630DE03008B8596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D331078D25AF61A700F6BFAE /* Project object */;
+	rootObject = D3B4263F2630DE03008B8596 /* Project object */;
 }

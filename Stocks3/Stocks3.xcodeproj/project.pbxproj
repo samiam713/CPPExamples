@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D331079925AF61A700F6BFAE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D331079825AF61A700F6BFAE /* main.cpp */; };
-		D3EF24BC266969FF001C6687 /* Solution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3EF24BA266969FF001C6687 /* Solution.cpp */; };
+		D38EFC86266698AA005930AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D38EFC85266698AA005930AD /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D331079325AF61A700F6BFAE /* CopyFiles */ = {
+		D38EFC80266698AA005930AD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D331079525AF61A700F6BFAE /* GoogleScratchPaper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GoogleScratchPaper; sourceTree = BUILT_PRODUCTS_DIR; };
-		D331079825AF61A700F6BFAE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		D3EF24BA266969FF001C6687 /* Solution.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution.cpp; sourceTree = "<group>"; };
-		D3EF24BB266969FF001C6687 /* Solution.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution.hpp; sourceTree = "<group>"; };
+		D38EFC82266698AA005930AD /* Stocks3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks3; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38EFC85266698AA005930AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D331079225AF61A700F6BFAE /* Frameworks */ = {
+		D38EFC7F266698AA005930AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,66 +38,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D331078C25AF61A700F6BFAE = {
+		D38EFC79266698AA005930AD = {
 			isa = PBXGroup;
 			children = (
-				D331079725AF61A700F6BFAE /* GoogleScratchPaper */,
-				D331079625AF61A700F6BFAE /* Products */,
+				D38EFC84266698AA005930AD /* Stocks3 */,
+				D38EFC83266698AA005930AD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D331079625AF61A700F6BFAE /* Products */ = {
+		D38EFC83266698AA005930AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D331079525AF61A700F6BFAE /* GoogleScratchPaper */,
+				D38EFC82266698AA005930AD /* Stocks3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D331079725AF61A700F6BFAE /* GoogleScratchPaper */ = {
+		D38EFC84266698AA005930AD /* Stocks3 */ = {
 			isa = PBXGroup;
 			children = (
-				D331079825AF61A700F6BFAE /* main.cpp */,
-				D3EF24BA266969FF001C6687 /* Solution.cpp */,
-				D3EF24BB266969FF001C6687 /* Solution.hpp */,
+				D38EFC85266698AA005930AD /* main.cpp */,
 			);
-			path = GoogleScratchPaper;
+			path = Stocks3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D331079425AF61A700F6BFAE /* GoogleScratchPaper */ = {
+		D38EFC81266698AA005930AD /* Stocks3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D331079C25AF61A700F6BFAE /* Build configuration list for PBXNativeTarget "GoogleScratchPaper" */;
+			buildConfigurationList = D38EFC89266698AA005930AD /* Build configuration list for PBXNativeTarget "Stocks3" */;
 			buildPhases = (
-				D331079125AF61A700F6BFAE /* Sources */,
-				D331079225AF61A700F6BFAE /* Frameworks */,
-				D331079325AF61A700F6BFAE /* CopyFiles */,
+				D38EFC7E266698AA005930AD /* Sources */,
+				D38EFC7F266698AA005930AD /* Frameworks */,
+				D38EFC80266698AA005930AD /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GoogleScratchPaper;
-			productName = GoogleScratchPaper;
-			productReference = D331079525AF61A700F6BFAE /* GoogleScratchPaper */;
+			name = Stocks3;
+			productName = Stocks3;
+			productReference = D38EFC82266698AA005930AD /* Stocks3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D331078D25AF61A700F6BFAE /* Project object */ = {
+		D38EFC7A266698AA005930AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					D331079425AF61A700F6BFAE = {
-						CreatedOnToolsVersion = 12.3;
+					D38EFC81266698AA005930AD = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = D331079025AF61A700F6BFAE /* Build configuration list for PBXProject "GoogleScratchPaper" */;
+			buildConfigurationList = D38EFC7D266698AA005930AD /* Build configuration list for PBXProject "Stocks3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,30 +103,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D331078C25AF61A700F6BFAE;
-			productRefGroup = D331079625AF61A700F6BFAE /* Products */;
+			mainGroup = D38EFC79266698AA005930AD;
+			productRefGroup = D38EFC83266698AA005930AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D331079425AF61A700F6BFAE /* GoogleScratchPaper */,
+				D38EFC81266698AA005930AD /* Stocks3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D331079125AF61A700F6BFAE /* Sources */ = {
+		D38EFC7E266698AA005930AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EF24BC266969FF001C6687 /* Solution.cpp in Sources */,
-				D331079925AF61A700F6BFAE /* main.cpp in Sources */,
+				D38EFC86266698AA005930AD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D331079A25AF61A700F6BFAE /* Debug */ = {
+		D38EFC87266698AA005930AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -182,7 +176,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		D331079B25AF61A700F6BFAE /* Release */ = {
+		D38EFC88266698AA005930AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,14 +229,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		D331079D25AF61A700F6BFAE /* Debug */ = {
+		D38EFC8A266698AA005930AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -252,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		D331079E25AF61A700F6BFAE /* Release */ = {
+		D38EFC8B266698AA005930AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -265,25 +259,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D331079025AF61A700F6BFAE /* Build configuration list for PBXProject "GoogleScratchPaper" */ = {
+		D38EFC7D266698AA005930AD /* Build configuration list for PBXProject "Stocks3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D331079A25AF61A700F6BFAE /* Debug */,
-				D331079B25AF61A700F6BFAE /* Release */,
+				D38EFC87266698AA005930AD /* Debug */,
+				D38EFC88266698AA005930AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D331079C25AF61A700F6BFAE /* Build configuration list for PBXNativeTarget "GoogleScratchPaper" */ = {
+		D38EFC89266698AA005930AD /* Build configuration list for PBXNativeTarget "Stocks3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D331079D25AF61A700F6BFAE /* Debug */,
-				D331079E25AF61A700F6BFAE /* Release */,
+				D38EFC8A266698AA005930AD /* Debug */,
+				D38EFC8B266698AA005930AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D331078D25AF61A700F6BFAE /* Project object */;
+	rootObject = D38EFC7A266698AA005930AD /* Project object */;
 }
